@@ -145,6 +145,7 @@ body {
 .footer .contact:focus,
 .accent     {
     color: var(--accent-color);
+    
 }
 
 .contact-nav {
@@ -164,9 +165,38 @@ body {
     
 }
 
+.contact-nav .link:hover {
+    fill: var(--accent-color);
+  
+}
+
+.icon {
+    fill: #757575;
+    margin-right: 10px;
+}
+
+.icon:hover {
+    fill: var(--accent-color);
+}
+
+
   /* main */
 
   .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4) 
+        ),
+         url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    height: 600px;
+    background-size: cover ;
+    
       background-color: var(--footer-bg);
       text-align: center;
       padding: 200px 0;
@@ -208,10 +238,12 @@ body {
     letter-spacing: 0.06em;
     cursor: pointer;
 
-    
-    
+     }
 
-  }
+     .button:hover {
+        background-color: #188CE8;
+    }
+
   
   .button-secondary {
     border-radius: 4px;
@@ -237,6 +269,33 @@ body {
 
   .advantage {
       display: flex;
+  }
+
+  .icons {
+    width: 70px;
+    height: 70px;
+  }
+
+  .advantage .icons{
+    
+    height: 120px;
+    width: 270px;
+    margin-bottom: 30px;
+    background-color: var(--secondary-bg);
+    border-radius: 4px;
+    
+    
+  }
+
+ 
+  .clock::before {
+    background-image: url(../images/clock.svg);
+  }
+  .diagram::before {
+    background-image: url(../images/diagram.svg);
+  }
+  .astronaut::before {
+    background-image: url(../images/astronaut.svg);
   }
 
   .advantage .item:not(:last-child) {
@@ -297,9 +356,6 @@ body {
     
 }
 
-.team-list .item {
-    padding-bottom: 30px;
-}
 
 .team-list .title {
     color: var(--title-text-color);
@@ -315,6 +371,7 @@ body {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-bottom: 16px;
 }
 
 .team-list {
@@ -323,15 +380,51 @@ body {
 
 }
 
-.team-list .item {
+.team-list>.item {
     background-color: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
 }
 
-.team-list .item + .item {
+.team-list>.item + .item {
     margin-left: 30px;
 }
+
+.clients.list {
+    display: flex;
+}
+
+.clients .item + .item {
+    margin-left: 30px;
+}
+
+.logo-client {
+    display: flex;
+   
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.logo-client:hover {
+    border: 1px solid var(--accent-color);
+
+}
+.logo-client:hover .letter{
+    
+    
+    fill: var(--accent-color);
+}
+
+.logo-client .letter{
+fill: #afb1b8;
+width: 106px;
+height: 60px;
+}
+
 
 .filter {
     display: flex;
@@ -402,6 +495,7 @@ img {
 
 
 .footer {
+    display: flex;
     background-color: var(--footer-bg);
     padding: 60px 0;
     
@@ -410,6 +504,7 @@ img {
 
 .contact-list {
     margin-top: 20px;
+    /* margin-right: 70px; */
     text-decoration: none;
     font-style: normal;
     text-decoration: inherit;
@@ -446,6 +541,74 @@ img {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
+
+.social-links .list {
+    display: flex;
+    
+}
+
+.social-links {
+    margin-left: 70px;
+}
+
+
+
+.social-links .item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.btn {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+}
+.team-social .btn-icon {
+    
+    fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+}
+
+.team-social .item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-social{
+    display: flex;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.team-social .btn:hover {
+padding: 12px;
+fill: var(--primary-white-color);
+}
+
+
+
+.team-social .btn-icon:hover {
+    
+    fill: var(--primary-white-color);
+  
+    
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+}
+
+.btn-icon {
+    
+    fill: var(--primary-white-color);
+    width: 20px;
+    height: 20px;
+}
+
+
+
+    
 
 
  
