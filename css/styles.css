@@ -150,19 +150,21 @@ body {
 }
 
 .contact-nav .link {
-    display: block;
+    display: flex;
+    align-items:center;
     padding-top: 32px;
     padding-bottom: 32px;   
 }
 
 .contact-nav .link:hover,
 .contact-nav .link:focus {
-    display: block;
+    
     fill: var(--accent-color); 
 
 }
 
 .icon {
+    
     fill: #757575;
     margin-right: 10px;   
 }
