@@ -103,7 +103,7 @@ body {
 .link-logo:focus,
 .logo-footer:hover, 
 .logo-footer:focus {   
-    text-decoration: underline;
+    text-decoration: underline;                 
 }
 
 .site-nav {
@@ -155,7 +155,8 @@ body {
     padding-bottom: 32px;   
 }
 
-.contact-nav .link:hover {
+.contact-nav .link:hover,
+.contact-nav .link:focus {
     display: block;
     fill: var(--accent-color); 
 
@@ -166,7 +167,8 @@ body {
     margin-right: 10px;   
 }
 
-.icon:hover {
+.link:hover .icon,
+.link:focus .icon{
     fill: var(--accent-color);
 }
 
@@ -227,7 +229,8 @@ body {
     cursor: pointer;
      }
 
-     .button:hover {
+     .button:hover,
+     .button:focus {
         background-color: #188CE8;
     }
 
@@ -392,11 +395,13 @@ body {
     border-radius: 4px;
 }
 
-.logo-client:hover {
+.logo-client:hover,
+.logo-client:focus {
     border: 1px solid var(--accent-color);
 }
 
-.logo-client:hover .letter{ 
+.logo-client:hover .letter,
+.logo-client:focus .letter{ 
     fill: var(--accent-color);
 }
 
@@ -449,7 +454,8 @@ height: 60px;
     line-height: 1.88;   
 }
 
-.projects .link:hover {
+.projects .link:hover,
+.projects .link:focus {
     display: block;
 
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -584,18 +590,21 @@ color: var(--primary-white-color);
     padding-left: 32px;
     padding-right: 32px;
 }
-.team-social .btn:hover {
+.team-social .btn:hover,
+.team-social .btn:focus {
 padding: 12px;
 fill: var(--primary-white-color);
 }
 
 
 
-.team-social .btn-icon:hover {
+.btn:hover .btn-icon,
+.btn:focus .btn-icon{
         fill: var(--primary-white-color);
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
     background-color: var(--accent-color);
 }
 
