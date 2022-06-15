@@ -173,6 +173,8 @@ body {
 .icon {
     fill: #757575;
     margin-right: 10px;
+   
+    
 }
 
 .icon:hover {
@@ -272,12 +274,13 @@ body {
   }
 
   .icons {
+    
     width: 70px;
     height: 70px;
   }
 
-  .advantage .icons{
-    
+  .advantage .iconbg{
+    padding: 25px 100px;
     height: 120px;
     width: 270px;
     margin-bottom: 30px;
@@ -495,11 +498,15 @@ img {
 
 
 .footer {
-    display: flex;
+    
     background-color: var(--footer-bg);
+    
+    
+    
+}
+
+.contacts {
     padding: 60px 0;
-    
-    
 }
 
 .contact-list {
@@ -527,6 +534,7 @@ img {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    margin-bottom: 20px;
     
     
 }
@@ -549,12 +557,27 @@ img {
 
 .social-links {
     margin-left: 70px;
+    padding-top: 72px;
+    padding-bottom: 100px;
 }
 
 
 
 .social-links .item:not(:last-child) {
     margin-right: 10px;
+}
+
+.social-links .title {
+margin-top: 0;
+margin-bottom: 20px;  
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--primary-white-color);
+}
+.footer .container {
+    display: flex;
 }
 
 .btn {
