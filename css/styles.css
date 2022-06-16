@@ -1,11 +1,3 @@
-/* 
-#757575
-#212121
-#2196F3
-#FFFFFF
-rgba(255, 255, 255, 0.6);
-*/
-
 html {
     box-sizing: border-box;
 }
@@ -24,6 +16,7 @@ html {
     --primary-white-color: #FFFFFF;
     --secondary-bg: #F5F4FA;
     --footer-bg:  #2F303A;
+    --icons-color: #AFB1B8;
 }
 
 body {
@@ -32,7 +25,6 @@ body {
     color: var(--primary-text-color);
     background-color: var(--primary-white-color);
     letter-spacing: 0.03em;
-    /* width: 1600px; */
    }
 
    p {
@@ -58,7 +50,6 @@ body {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    /* outline: 2px solid tomato; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -99,23 +90,10 @@ body {
     line-height: 1.19;
 }
 
-.link-logo:hover,
-.link-logo:focus,
-.logo-footer:hover, 
-.logo-footer:focus {   
-    text-decoration: underline;                 
-}
-
 .site-nav {
     display: flex;
     margin-left: 93px;
 }
-
-/* .site-nav .item, 
-.contact-nav .item {
-    
-    outline: 2px solid tomato;
-} */
 
 .site-nav .item:not(:last-child) {
     margin-right: 50px;
@@ -154,13 +132,6 @@ body {
     align-items:center;
     padding-top: 32px;
     padding-bottom: 32px;   
-}
-
-.contact-nav .link:hover,
-.contact-nav .link:focus {
-    
-    fill: var(--accent-color); 
-
 }
 
 .icon {
@@ -253,7 +224,8 @@ body {
 }
 
   .button-secondary:hover,
-  .button-secondary:focus {
+  .button-secondary:focus,
+  .button-secondary.active {
       color: var(--primary-white-color);
       background-color: var(--accent-color);
       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -269,7 +241,9 @@ body {
   }
 
   .advantage .iconbg{
-    padding: 25px 100px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
     height: 120px;
     width: 270px;
     margin-bottom: 30px;
@@ -389,11 +363,12 @@ body {
 
 .logo-client {
     display: flex;
+    align-items:center;
+    justify-content: center ;
    
     width: 170px;
     height: 92px;
-    padding: 16px 32px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--icons-color);
     border-radius: 4px;
 }
 
@@ -408,7 +383,7 @@ body {
 }
 
 .logo-client .letter{
-fill: #afb1b8;
+fill: var(--icons-color);
 width: 106px;
 height: 60px;
 }
@@ -456,10 +431,12 @@ height: 60px;
     line-height: 1.88;   
 }
 
-.projects .link:hover,
-.projects .link:focus {
+.projects .link {
     display: block;
+}
 
+.projects .link:hover,
+.projects .link:focus {   
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -486,6 +463,7 @@ img {
 
 
 .footer {
+    padding: 60px 0;
     
     background-color: var(--footer-bg);
     
@@ -493,13 +471,10 @@ img {
     
 }
 
-.contacts {
-    padding: 60px 0;
-}
 
 .contact-list {
     margin-top: 20px;
-    /* margin-right: 70px; */
+
     text-decoration: none;
     font-style: normal;
     text-decoration: inherit;
@@ -545,8 +520,6 @@ img {
 
 .social-links {
     margin-left: 70px;
-    padding-top: 72px;
-    padding-bottom: 100px;
 }
 
 
@@ -566,21 +539,31 @@ color: var(--primary-white-color);
 }
 .footer .container {
     display: flex;
+    align-items:baseline;
 }
 
-.btn {
-    display: block;
+.sociallink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
-    padding: 12px;
-}
-.team-social .btn-icon {
     
-    fill: #AFB1B8;
+}
+
+.sociallink-icon {
+    
+    fill: var(--primary-white-color);
     width: 20px;
     height: 20px;
+}
+
+.team-social .sociallink-icon {
+    
+    fill: var(--icons-color);
+    
 }
 
 .team-social .item:not(:last-child) {
@@ -589,33 +572,20 @@ color: var(--primary-white-color);
 
 .team-social{
     display: flex;
-    padding-left: 32px;
-    padding-right: 32px;
-}
-.team-social .btn:hover,
-.team-social .btn:focus {
-padding: 12px;
-fill: var(--primary-white-color);
+   justify-content: center;
 }
 
-
-
-.btn:hover .btn-icon,
-.btn:focus .btn-icon{
+.sociallink:hover .sociallink-icon,
+.sociallink:focus .sociallink-icon{
         fill: var(--primary-white-color);
 }
 
-.btn:hover,
-.btn:focus {
+.sociallink:hover,
+.sociallink:focus {
     background-color: var(--accent-color);
 }
 
-.btn-icon {
-    
-    fill: var(--primary-white-color);
-    width: 20px;
-    height: 20px;
-}
+
 
 
 
