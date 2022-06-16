@@ -251,18 +251,6 @@ body {
     border-radius: 4px;
   }
 
- 
-  .clock::before {
-    background-image: url(../images/clock.svg);
-  }
-
-  .diagram::before {
-    background-image: url(../images/diagram.svg);
-  }
-
-  .astronaut::before {
-    background-image: url(../images/astronaut.svg);
-  }
 
   .advantage .item:not(:last-child) {
     margin-right: 30px;
